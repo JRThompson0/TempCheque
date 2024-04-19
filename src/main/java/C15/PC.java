@@ -5,6 +5,12 @@ public class PC
     private Case caseType;
     private Motherboard momBoard;
     private Monitor monitor;
+    public PC(Case caseType, Motherboard momBoard, Monitor monitor )
+    {
+        this.caseType=caseType;
+        this.momBoard=momBoard;
+        this.monitor=monitor;
+    }
     public Case getCaseType()
     {
         return caseType;
@@ -32,12 +38,6 @@ public class PC
     private void drawLogo()
     {
         this.monitor.drawPixel(1,2,"Green");
-    }
-    public PC(Case caseType, Motherboard momBoard, Monitor monitor )
-    {
-        this.caseType=caseType;
-        this.momBoard=momBoard;
-        this.monitor=monitor;
     }
     public void description()
     {
