@@ -12,6 +12,7 @@ public class Main
         Case newCase = new Case("BeegCase","Microsoft","A Nuclear Generator",caseSize);
         PC newPC = new PC(newCase,momboard,monitor);
         newPC.description();
+        System.out.println();
         newPC.powerUp(1,2,"Greem");
     }
 }

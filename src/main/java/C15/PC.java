@@ -42,8 +42,11 @@ public class PC
     public void description()
     {
         System.out.println("Welcome to worstbuy. The computer on sale today is:");
+        System.out.println();
         System.out.println("Case: \n"+this.caseType.toString());
+        System.out.println();
         System.out.println("Motherboard: \n"+this.momBoard.toString());
+        System.out.println();
         System.out.println("Monitor \n"+this.monitor.toString());
     }
     public void powerUp(int x, int y, String color)
