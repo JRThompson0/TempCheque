@@ -49,4 +49,11 @@ public class Case
     {
         System.out.println("Power Button Pressed");
     }
+    public String toString()
+    {
+        StringBuilder stringTing = new StringBuilder().append("Model: ").append(this.model)
+                .append("\nDimensions: ").append(this.dimensions.toString())
+                .append("\nManufacturer: ").append(this.manufacturer);
+        return stringTing.toString();
+    }
 }

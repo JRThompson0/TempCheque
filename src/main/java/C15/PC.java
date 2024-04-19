@@ -39,4 +39,17 @@ public class PC
         this.momBoard=momBoard;
         this.monitor=monitor;
     }
+    public void description()
+    {
+        System.out.println("Welcome to worstbuy. The computer on sale today is:");
+        System.out.println("Case: \n"+this.caseType.toString());
+        System.out.println("Motherboard: \n"+this.momBoard.toString());
+        System.out.println("Monitor \n"+this.monitor.toString());
+    }
+    public void powerUp(int x, int y, String color)
+    {
+        caseType.pressPowerButton();
+        monitor.drawLogo(x,y,color);
+        momBoard.loadProgram("Windows XP");
+    }
 }

@@ -23,5 +23,8 @@ public class Dimensions
     public int getDepth() {
         return depth;
     }
-
+    public String toString()
+    {
+        return this.height+" x "+ this.width+" x "+ this.depth;
+    }
 }
